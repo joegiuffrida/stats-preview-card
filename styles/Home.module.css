@@ -61,7 +61,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75rem;
-  color: hsla(0, 0%, 100%, 0.75);
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 .cardContent ul {
@@ -82,4 +82,83 @@
 
 .cardContent li p {
   font-size: 0.9rem;
+}
+
+/* 
+************
+DESKTOP RESPONSIVE DESIGN 
+************
+*/
+
+@media (min-width: 75em) {
+  .wrapper {
+    justify-content: center;
+  }
+
+  .card {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    max-width: 1100px;
+    min-width: 275px;
+    height: 398px;
+    margin: 0;
+    border-radius: 10px;
+    background-color: hsl(244, 38%, 16%);
+  }
+
+  /* header image and overlay */
+  .cardImage {
+    height: 100%;
+  }
+
+  .overlay {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .cardImage img {
+    border-radius: 0 10px 10px 0;
+  }
+
+  /* text content */
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    width: 60%;
+    min-height: 398px;
+    padding: 0;
+    padding-left: 48px;
+  }
+
+  .cardContent h2 {
+    font-size: 2.25rem;
+    text-align: left;
+    width: 90%;
+  }
+
+  .cardContent h3 {
+    text-align: left;
+  }
+
+  .cardContent p {
+    text-align: left;
+  }
+
+  .cardContent > p {
+    width: 80%;
+    margin-top: 0;
+  }
+
+  .cardContent ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 32px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .cardContent li {
+    margin-right: 32px;
+  }
 }
