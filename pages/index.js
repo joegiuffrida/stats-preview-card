@@ -7,7 +7,7 @@ export default function Home() {
     <div className={styles.wrapper}>
       <Head>
         <title>Stats Preview Card</title>
-        <link rel="icon" href="favicon-32x32.jpg" type="image/x-icon" />
+        <link rel="icon" href="/favicon.png" />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
           rel="stylesheet"
